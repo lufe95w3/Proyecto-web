@@ -8,8 +8,6 @@ JavaScript: (/Scripts.js/script.js) Scripts para la interacción del grafico en 
 
 2. Estructura de Archivos:
 
-Organización del proyecto
-
 /Proyecto-web
 
 index.html (home)
