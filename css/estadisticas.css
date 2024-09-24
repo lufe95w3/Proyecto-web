@@ -1,0 +1,80 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Quitar scroll de la página */
+    margin: 0; /* Asegura que no haya márgenes por defecto */
+}
+
+header {
+    background-color: rgb(245, 245, 245); /* Color de fondo del encabezado */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 20px;
+    display: flex; /* Alinea los elementos en una fila */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: space-between; /* Espacia el logo y el menú de navegación */
+}
+
+.logo {
+    margin: 0;
+    text-decoration: none;
+    color: rgb(255, 136, 0);
+    font-size: 1.9em;
+}
+
+nav {
+    display: flex; /* Alinea los elementos en una fila */
+    gap: 20px; /* Espacio entre los enlaces del menú */
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 0 15px;
+}
+
+nav a:hover {
+    color: blueviolet;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.grafica {
+    display: flex;
+    flex-direction: column; /* Alinear elementos en columna */
+    align-items: center; /* Centrar contenido */
+    justify-content: center; /* Centrar verticalmente */
+    height: 100%; /* Tomar toda la altura disponible */
+}
+
+.chart-container {
+    width: 90%; /* Aumentar el ancho al 90% */
+    max-width: 800px; /* Máximo ancho */
+}
+
+canvas {
+    max-width: 100%; /* Asegura que el canvas no exceda el contenedor */
+    height: 50vh; /* Establecer altura al 50% de la vista del puerto */
+}
+
+footer {
+    background-color: rgb(50, 50, 50); /* Color de fondo del footer igual al de la página */
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto; /* Asegura que el footer esté al final */
+}
+
+footer p {
+    color: rgb(100, 100, 100);
+}

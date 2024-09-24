@@ -1,0 +1,105 @@
+/* Estilos generales para la página del catálogo */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Fondo oscuro para el cuerpo */
+    color: #fff; /* Color del texto en blanco para contraste */
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+header {
+    background-color: rgb(245, 245, 245); /* Color del encabezado */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: black; /* Color del texto en el encabezado */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para el encabezado */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    color: rgb(255, 136, 0); /* Color del logo para contraste */
+}
+
+header nav a {
+    text-decoration: none;
+    color: black; /* Color del texto en los enlaces del encabezado */
+    padding: 10px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: rgb(255, 94, 0); /* Color de hover para enlaces */
+}
+
+#catalogo {
+    padding: 20px;
+    padding-top: 100px; /* Ajusta el padding-top para compensar el encabezado fijo */
+    min-height: calc(100vh - 60px); /* Ajusta la altura para no sobrepasar el viewport */
+    background-color: #444; /* Fondo oscuro para el catálogo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+#catalogo h1 {
+    color: #FFA07A;
+    margin-bottom: 30px; /* Espaciado inferior para separar del contenido */
+    font-size: 2em; /* Tamaño de fuente más grande para el título */
+    font-weight: 500; /* Peso de fuente seminegrita para mayor impacto */
+    text-align: center; /* Alineación centrada */
+}
+
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho del contenido */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+.item {
+    background-color: #555; /* Fondo gris oscuro para los ítems */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 220px; /* Ancho fijo para los ítems */
+    text-align: center;
+    margin: 0; /* Eliminar márgenes para ajustar al contenedor */
+    box-sizing: border-box;
+}
+
+.contenedor-foto {
+    padding: 10px;
+}
+
+.contenedor-foto img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #666;
+}
+
+.descripcion {
+    font-size: 1em;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.precio {
+    font-size: 1.2em;
+    color: rgb(255, 165, 0); /* Color naranja para los precios */
+    margin-bottom: 10px;
+}

@@ -1,0 +1,120 @@
+/* Fondo oscuro para la página */
+body {
+    background-color: #1c1c1c; /* Fondo oscuro neutro */
+    color: #f1f1f1; /* Texto en color claro para contraste */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow-x: hidden; /* Evitar desbordamiento horizontal */
+    height: 100vh; /* Ajustar la altura al 100% de la ventana */
+    display: flex;
+    flex-direction: column; /* Usar flexbox para organizar el contenido */
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: rgb(245, 245, 245); /* Color de fondo del header */
+    padding: 20px;
+    position: fixed; /* Fijar el encabezado en la parte superior */
+    width: 100%;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+    display: flex; /* Alinear los elementos en una fila */
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+/* Contenedor para logo y navegación */
+header .container {
+    display: flex; /* Usar flexbox para la alineación */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    justify-content: space-between; /* Espacio entre el logo y el menú */
+    max-width: 1200px; /* Establece un ancho máximo para centrar el contenido */
+    margin: 0 auto; /* Centra el contenedor dentro del header */
+}
+
+header .logo {
+    color: rgb(255, 136, 0); /* Color del logo */
+    font-size: 1.9em; /* Tamaño del logo */
+    margin: 0; /* Eliminar margen por defecto */
+    padding-right: 20px; /* Espacio entre el logo y el menú */
+}
+
+header nav {
+    display: flex; /* Alinear los enlaces en una fila */
+    gap: 20px; /* Espacio entre enlaces */
+    padding-left: 20px; /* Espacio a la izquierda de los enlaces */
+}
+
+header nav a {
+    color: #333; /* Color original de los enlaces */
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del banner principal */
+.hero-adopcion {
+    background-color: #1c1c1c;
+    padding: 120px;
+    text-align: center;
+    flex: 0 0 auto; /* Evitar que el banner crezca más de lo necesario */
+}
+
+.hero-adopcion h1 {
+    color: #eb9a53;
+}
+
+/* Contenedor para las tarjetas de animales en adopción */
+.animales-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 40px; /* Añadir margen alrededor de las tarjetas */
+    flex: 1; /* Permitir que este contenedor crezca */
+    overflow-y: auto; /* Permitir desplazamiento vertical solo en esta sección si es necesario */
+}
+
+/* Estilo de cada tarjeta de animal */
+.animal {
+    background-color: #eb9a53;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.animal img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.animal:hover {
+    transform: scale(1.05);
+    border: 1px solid #f05454;
+}
+
+.pie {
+    padding: 15px;
+    background-color: #333;
+    border-top: 1px solid #555;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    padding: 10px; /* Reducir el padding para hacerlo más pequeño */
+    text-align: center;
+    flex-shrink: 0; /* Asegurarse de que el pie de página no crezca */
+    position: relative; /* Posición relativa para manejar el espacio */
+    margin-top: auto; /* Colocar el footer en la parte inferior */
+}
+
+footer p {
+    color: #f1f1f1;
+    margin: 0;
+    font-size: 0.8rem; /* Tamaño de fuente pequeño para el pie de página */
+}

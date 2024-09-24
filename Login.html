@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una Voz Para Nuestras Mascotas</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Una voz para nuestras mascotas</p>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="campañas.html">Campañas</a>
+                <a href="productos.html">Productos</a>
+                <a href="maneras-contribuir.html">Contribuir</a>
+                <a href="voluntarios.html">Voluntarios</a>
+                <a href="contacto.html">Contácto</a>
+                <a href="Login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="login">
+            <div class="container">
+                <h1> </h1>
+                <form action="/login" method="post">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <button type="button" onclick="window.location.href='index.html';">Iniciar Sesión</button>
+                </form>
+                <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+                <p>¿No tienes una cuenta? <a href="register.html">Regístrate aquí</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Una Voz Para Nuestras Mascotas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

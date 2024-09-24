@@ -1,0 +1,161 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #393939;
+    display: flex;
+    flex-direction: column; /* Asegura que el footer esté en la parte inferior */
+    min-height: 100vh; /* Hace que el cuerpo ocupe al menos el 100% de la altura de la ventana */
+    overflow-x: hidden; /* Evita el scroll horizontal */
+    overflow-y: auto; /* Permite el scroll vertical solo si es necesario */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1; /* Permite que el contenedor principal crezca y empuje el footer hacia abajo */
+}
+
+/* Header */
+header {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 10px;
+    display: flex; /* Usar flex para alinear elementos en el header */
+    justify-content: space-between; /* Espaciar título y navegación */
+    align-items: center; /* Alinear verticalmente */
+    border-bottom: 2px solid #ffcc33; /* Línea inferior en naranja claro */
+}
+
+header .logo {
+    font-size: 24px;
+    color: #FF8C00; /* Texto en naranja oscuro */
+    font-weight: bold;
+}
+
+/* Estilo para el menú de navegación */
+nav {
+    display: flex; /* Usar flex para alinear los enlaces en una fila */
+    justify-content: flex-end; /* Alinear los enlaces a la derecha */
+}
+
+nav a {
+    margin: 0 10px; /* Espaciado horizontal entre enlaces */
+    text-decoration: none;
+    color: #000; /* Cambiar color a negro */
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff9933; /* Naranja un poco más oscuro para el hover */
+}
+
+/* Section Programas */
+#Programas {
+    margin: 40px 0;
+}
+
+#Programas h2 {
+    text-align: center;
+    color: #eb9a53;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.programa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px; /* Reducir la altura de las tarjetas */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px; /* Reducir el margen inferior entre tarjetas */
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    position: relative;
+    width: 100%; /* Asegura que las tarjetas ocupen el 100% del ancho */
+    max-width: 100%; /* Evita desbordamientos de ancho */
+    overflow: hidden; /* Evita desbordamiento */
+}
+
+.programa .content {
+    text-align: center;
+    padding: 10px; /* Reducir el padding */
+}
+
+.programa h3 {
+    font-size: 24px; /* Reducir el tamaño del título */
+    margin-bottom: 10px;
+}
+
+.programa p {
+    font-size: 14px; /* Reducir el tamaño del texto */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Botones */
+button {
+    background-color: #eb9a53;
+    border: none;
+    padding: 8px 16px; /* Reducir padding en botones */
+    font-size: 14px; /* Reducir tamaño de fuente en botones */
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button a {
+    text-decoration: none;
+    color: #333;
+}
+
+button:hover {
+    background-color: #fda160;
+}
+
+/* Background Images - Imágenes locales */
+.adopcion {
+    background-image: url("../Img/Programas/adopcion.jpg"); /* Imagen local para adopción */
+    height: 250px; /* Reducir altura de fondo */
+}
+
+.esterilizacion {
+    background-image: url("../Img/Programas/Esterilizacion.jpg"); /* Imagen local para esterilización */
+    height: 250px; /* Reducir altura de fondo */
+}
+
+.vacunacion {
+    background-image: url("../Img/Programas/vacuna.jpeg"); /* Imagen local para vacunación */
+    height: 250px; /* Reducir altura de fondo */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0; /* Reducir el tamaño del footer */
+}
+
+footer p {
+    margin: 0;
+    font-size: 15px; /* Reducir el tamaño de la fuente */
+}
+
+/* Consultas de Medios */
+@media (max-width: 600px) {
+    .programa {
+        flex-direction: column;
+        height: auto; /* Permitir que la altura se ajuste según el contenido */
+    }
+
+    button {
+        width: 100%; /* Hacer que los botones ocupen todo el ancho en pantallas más pequeñas */
+    }
+}

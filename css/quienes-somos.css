@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(50, 50, 50); /* Color de fondo gris oscuro */
+    color: #000; /* Color de texto */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el contenido ocupe al menos la altura de la ventana */
+    overflow: hidden; /* Elimina el scroll (horizontal y vertical) */
+}
+
+/* Encabezado */
+header {
+    background-color: rgb(245, 245, 245); /* Color de fondo original del encabezado */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 5px 10px; /* Reducir el padding superior e inferior */
+    display: flex; /* Alinea los elementos en una fila */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: space-between; /* Espacia el logo y el menú de navegación */
+    box-sizing: border-box;
+}
+
+header .logo {
+    margin: 0;
+    text-decoration: none;
+    color: rgb(255, 136, 0);
+    font-size: 1.5em; /* Reducir el tamaño de la fuente del logo */
+}
+
+header nav {
+    display: flex; /* Alinea los elementos en una fila */
+    gap: 15px; /* Reducir el espacio entre los enlaces del menú */
+    flex-wrap: nowrap; /* Previene que los elementos se envuelvan a la siguiente línea */
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 0 10px; /* Reducir el padding de los enlaces */
+    font-size: 0.9em; /* Reducir el tamaño de fuente de los enlaces */
+}
+
+header a:hover {
+    color: blueviolet;
+}
+
+/* Sección de Quiénes Somos */
+#about {
+    background-color: rgb(50, 50, 50); /* Fondo gris oscuro para la sección */
+    padding: 60px 20px; /* Espaciado en la sección principal */
+    margin-top: 80px; /* Para evitar que el contenido se superponga al encabezado */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex; /* Usa flex para el layout en la sección */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    overflow: hidden; /* Evita cualquier desbordamiento en esta sección */
+}
+
+.about-content {
+    display: flex; /* Diseño en fila para la imagen y el texto */
+    align-items: center; /* Centra verticalmente el contenido */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho máximo de la sección */
+}
+
+.about-image {
+    flex: 1.5; /* La imagen ocupa una proporción menor del contenedor */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+}
+
+.about-image img {
+    width: 100%; /* La imagen ocupa todo el ancho disponible del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+.about-text {
+    flex: 1; /* El texto ocupa una mayor proporción del contenedor */
+    color: white; /* Texto blanco para buen contraste */
+}
+
+#about h1 {
+    font-size: 2.5em;
+    color: #FFA07A;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.25em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(50, 50, 50); /* Color de fondo del footer igual al de la página */
+    padding: 0px 0;
+    text-align: center;
+    margin-top: auto; /* Asegura que el footer esté al final */
+}
+
+footer p {
+    color: rgb(100, 100, 100);
+}
