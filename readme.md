@@ -1,5 +1,7 @@
 Link Sitio Web: https://lufe95w3.github.io/unavozpornuestrasmascotas/
 
+![image](https://github.com/user-attachments/assets/25bf9310-9751-435b-b286-0e27109efce7)
+
 1. Maquetación del Proyecto:
    
 HTML: El proyecto contiene múltiples páginas web como index.html, quienes-somos.html, campañas.html, productos.html, productos.html, maneras-contribuir.html, voluntarios.html, contacto.html y login.html
