@@ -1,6 +1,7 @@
 Link Sitio Web: https://lufe95w3.github.io/unavozpornuestrasmascotas/
 
-![image](https://github.com/user-attachments/assets/25bf9310-9751-435b-b286-0e27109efce7)
+![image](https://github.com/user-attachments/assets/a8fd4e0f-ff48-49e8-8adc-a6253436cdfd)
+
 
 1. Maquetación del Proyecto:
    
